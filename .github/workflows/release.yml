@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Ruby 2.7
-      uses: actions/setup-ruby@v1
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@1.127.0
       with:
-        ruby-version: 2.7
+        ruby-version: '3.1'
 
     - name: Publish to GPR
       run: |
