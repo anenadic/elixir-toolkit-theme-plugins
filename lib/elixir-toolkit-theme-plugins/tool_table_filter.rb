@@ -36,5 +36,5 @@ module Jekyll
             end
         end
     end
-    Liquid::Template.register_filter(Jekyll::ToolTableFilter)
+    Liquid::Template.register_filter(Jekyll::Ett::ToolTableFilter)
 end

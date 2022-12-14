@@ -2,11 +2,11 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require 'jekyll/ett/version'
+require 'elixir-toolkit-theme-plugins/version'
 require 'rake'
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-ett"
+  spec.name          = "elixir-toolkit-theme-plugins"
   spec.version       =  Jekyll::Ett::VERSION.dup
   spec.authors       = ["bedroesb","janslifka"]
   spec.email         = ["bedro@psb.vib-ugent.be\n"]
