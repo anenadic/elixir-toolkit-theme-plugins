@@ -2,5 +2,5 @@
 
 require 'jekyll'
 
-require "ett/jekyll-tool-table-filter"
-require "ett/jekyll-tool-tag"
+require "jekyll/ett/tool_table_filter"
+require "jekyll/ett/tool_tag"
