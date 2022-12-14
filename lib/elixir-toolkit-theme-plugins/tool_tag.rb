@@ -17,8 +17,9 @@ module Jekyll
 
             def render(context)
                 tool = find_tool(context[@content.strip])
-                tags = create_tags(tool["registry"])
-
+                if tool["registry"]
+                    tags = create_tags(tool["registry"])
+                end
                 %Q{<a
                     tabindex="0"
                     class="tool"
