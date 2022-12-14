@@ -2,7 +2,7 @@ require "jekyll"
 
 
 module Jekyll
-    module ToolTableRelatedPagesFilter
+    module ToolTableFilter
         def add_related_pages(data)
             load_page_data
 
@@ -35,5 +35,5 @@ module Jekyll
         end
     end
 
-    Liquid::Template.register_filter(Jekyll::ToolTableRelatedPagesFilter)
+    Liquid::Template.register_filter(Jekyll::ToolTableFilter)
 end
