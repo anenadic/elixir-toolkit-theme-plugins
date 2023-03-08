@@ -8,7 +8,7 @@ require 'rake'
 Gem::Specification.new do |spec|
   spec.name          = "elixir-toolkit-theme-plugins"
   spec.version       =  Jekyll::Ett::VERSION.dup
-  spec.authors       = ["bedroesb","janslifka"]
+  spec.authors       = ["bedroesb", "janslifka", "MarekSuchanek"]
   spec.email         = ["bedro@psb.vib-ugent.be\n"]
 
   spec.summary       = "Plugins to work together with ELIXIR Toolkit theme"
