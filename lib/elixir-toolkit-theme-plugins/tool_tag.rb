@@ -27,7 +27,7 @@ module Jekyll
                     data-bs-toggle="popover"
                     data-bs-placement="bottom"
                     data-bs-trigger="focus"
-                    data-bs-content="<h5>#{tool["name"]}</h5><div class='mb-2'>#{tool["description"]}</div><a href='#{tool["url"]}'target='_blank'><span class='badge bg-dark text-white hover-primary'><i class='fa-solid fa-link me-2'></i>Website</span></a>#{tags}"
+                    data-bs-content="<h5>#{tool["name"]}</h5><div class='mb-2'>#{tool["description"]}</div><a href='#{tool["url"]} class='mt-2 me-2' 'target='_blank'><span class='badge bg-dark text-white hover-primary'><i class='fa-solid fa-link me-2'></i>Website</span></a>#{tags}"
                     data-bs-template="<div class='popover popover-tool' role='tooltip'><div class='popover-arrow'></div><h3 class='popover-header'></h3><div class='popover-body'></div></div>"
                     data-bs-html="true"
                     ><i class="fa-solid fa-wrench me-2"></i>#{ tool["name"] }</a>}
