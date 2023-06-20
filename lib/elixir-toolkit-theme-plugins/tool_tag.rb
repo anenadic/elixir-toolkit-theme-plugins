@@ -34,7 +34,7 @@ module Jekyll
             end
 
             def find_tool(tool_id)
-                tool = @tools.find { |t| t["id"] == tool_id }
+                tool = @tools.find { |t| t["id"] == tool_id.strip }
                 return tool if tool
                 
                 raise Exception.new "Undefined tool ID: #{tool_id}"
