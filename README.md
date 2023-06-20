@@ -1,4 +1,4 @@
-# Elixir Toolkit Theme Plugins
+# ELIXIR Toolkit Theme Plugins
 
 Here we collect scripts to add aditional features to the [ELIXIR Toolkit Theme](https://github.com/ELIXIR-Belgium/elixir-toolkit-theme).
 
