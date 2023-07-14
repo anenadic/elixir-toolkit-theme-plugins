@@ -69,7 +69,7 @@ module Jekyll
             end
 
             def create_tag(url, icon, label)
-                "<a href='#{url}' class='mt-2 me-2'><span class='badge bg-dark text-white hover-primary'><i class='fa-solid #{icon} me-2'></i>#{label}</span></a>"
+                "<a href='#{url}' target='_blank' rel='noopener' class='mt-2 me-2'><span class='badge bg-dark text-white hover-primary'><i class='fa-solid #{icon} me-2'></i>#{label}</span></a>"
             end
         end
     end
