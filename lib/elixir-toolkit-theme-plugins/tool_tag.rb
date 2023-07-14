@@ -59,12 +59,17 @@ module Jekyll
                     if registry["tess"]
                         tags << create_tag("https://tess.elixir-europe.org/search?q=#{registry["tess"]}", "fa-graduation-cap", "Training")
                     end
+
+                    if registry["europmc"]
+                        tags << create_tag("https://europepmc.org/article/MED/#{registry["europmc"]}", "fa-book", "Publication")
+                    end
+
                 end
                 tags
             end
 
             def create_tag(url, icon, label)
-                "<a href='#{url}' class='mt-2 me-2'><span class='badge bg-dark text-white hover-primary'><i class='fa-solid #{icon} me-2'></i>#{label}</span></a>"
+                "<a href='#{url}' target='_blank' rel='noopener' class='mt-2 me-2'><span class='badge bg-dark text-white hover-primary'><i class='fa-solid #{icon} me-2'></i>#{label}</span></a>"
             end
         end
     end
