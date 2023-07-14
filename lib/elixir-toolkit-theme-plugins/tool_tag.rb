@@ -59,6 +59,11 @@ module Jekyll
                     if registry["tess"]
                         tags << create_tag("https://tess.elixir-europe.org/search?q=#{registry["tess"]}", "fa-graduation-cap", "Training")
                     end
+
+                    if registry["europmc"]
+                        tags << create_tag("https://europepmc.org/article/MED/#{registry["europmc"]}", "fa-book", "Publication")
+                    end
+
                 end
                 tags
             end
