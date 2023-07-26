@@ -20,14 +20,14 @@ module Jekyll
 
             def load_page_data
                 @related_pages = {}
-                pages_path = File.join(Dir.pwd, "pages", "**", "*.md")
+                pages_path = File.join(Dir.pwd, "**", "*.md")
                 Dir.glob(pages_path).each do |f|
                     file = File.read(f)
                     page_id_matches = file.match(/page_id:\s*(\w+)/)
                     
                     if page_id_matches
                         page_id = page_id_matches[1]
-                        file.scan(/\{% tool "([^"]+)" %}/).flatten.each do |m|
+                        file.scan(/\{%\s*tool\s*"([^"]+)"\s*%}/).flatten.each do |m|
                             @related_pages[m] = Set[] unless @related_pages[m]
                             @related_pages[m].add(page_id)
                         end
