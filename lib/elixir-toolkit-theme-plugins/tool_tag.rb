@@ -28,7 +28,7 @@ module Jekyll
                     data-bs-content="<h5>#{tool["name"]}</h5><div class='mb-2'>#{tool["description"]}</div>#{tags}"
                     data-bs-template="<div class='popover popover-tool' role='tooltip'><div class='popover-arrow'></div><h3 class='popover-header'></h3><div class='popover-body'></div></div>"
                     data-bs-html="true"
-                    ><i class="fa-solid fa-wrench me-2"></i>#{ tool["name"] }</a>}
+                    ><i class="fa-solid fa-wrench fa-sm me-2"></i>#{ tool["name"] }</a>}
             end
 
             def find_tool(tool_id)
