@@ -44,23 +44,23 @@ module Jekyll
                 if tool["registry"]
                     registry = tool["registry"]
 
-                    if registry["biotools"]
+                    if registry["biotools"] and registry["biotools"] != "NA"
                         tags << create_tag("https://bio.tools/#{registry["biotools"]}", "fa-info", "Tool info")
                     end
 
-                    if registry["fairsharing"]
+                    if registry["fairsharing"] and registry["fairsharing"] != "NA"
                         tags << create_tag("https://fairsharing.org/FAIRsharing.#{registry["fairsharing"]}", "fa-database", "Standards/Databases")
                     end
 
-                    if registry["fairsharing-coll"]
+                    if registry["fairsharing-coll"] and registry["fairsharing-coll"] != "NA"
                         tags << create_tag("https://fairsharing.org/#{registry["fairsharing-coll"]}", "fa-database", "Standards/Databases")
                     end
 
-                    if registry["tess"]
+                    if registry["tess"] and registry["tess"] != "NA"
                         tags << create_tag("https://tess.elixir-europe.org/search?q=#{registry["tess"]}", "fa-graduation-cap", "Training")
                     end
 
-                    if registry["europmc"]
+                    if registry["europmc"] and registry["europmc"] != "NA"
                         tags << create_tag("https://europepmc.org/article/MED/#{registry["europmc"]}", "fa-book", "Publication")
                     end
 
