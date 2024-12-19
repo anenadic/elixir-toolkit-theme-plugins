@@ -6,7 +6,7 @@ module Jekyll
         module ToolTableFilter
             def add_related_pages(data)
                 load_page_data
-
+                return {} unless data
                 for tool in data
                     if tool['id'] && @related_pages[tool['id']]
                         tool['related_pages'] = @related_pages[tool['id']].to_a
